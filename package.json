@@ -1,0 +1,20 @@
+{
+  "name": "sync_directory",
+  "version": "1.0.0",
+  "description": "Simple script to synchronize a directory on another",
+  "main": "index.js",
+  "config": {
+    "src": "path/to/src",
+    "dest": "path/to/dest"
+  },
+  "scripts": {
+    "start_windows": "node index.js --src %npm_package_config_src% --dest %npm_package_config_dest%",
+    "start_linux": "node index.js --src $npm_package_config_src --dest $npm_package_config_dest"
+  },
+  "author": "SebastienDS",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "yargs": "^17.7.2"
+  }
+}
